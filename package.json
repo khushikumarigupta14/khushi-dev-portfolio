@@ -1,7 +1,13 @@
 {
   "name": "portfolio-app",
   "private": true,
+ "description": "A portfolio website built with React, Vite, and TailwindCSS",
+  "author": "Khushi Kumari Gupta ",
   "homepage": "https://khushikumarigupta14.github.io/khushi-dev-portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khushikumarigupta14/khushi-dev-portfolio.git"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {
