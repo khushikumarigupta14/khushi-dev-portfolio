@@ -2,7 +2,7 @@
 export const aboutData = {
   title: "About Me",
   image:
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80",
+    "https://lh3.googleusercontent.com/a/ACg8ocJCQmPXnm-C2JG73uBaKltD5xIrM7vS4KsH5ycqZLXAhkqw2jLFRw=s360-c-no",
   description: [
     "I’m Khushi Kumari, a dedicated Computer Science student with a passion for building creative and functional web applications.",
     "Although I don’t have professional work experience yet, I’ve completed several self-initiated projects that helped me strengthen my skills in both frontend and backend development. I enjoy learning new technologies and applying them to solve real-world problems.",
