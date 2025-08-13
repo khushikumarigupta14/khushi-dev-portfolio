@@ -139,5 +139,27 @@ export const projectsData = {
       lastUpdated: "2025-07-07",
       projectType: "personal",
     },
+    {
+      id: 7,
+      title: "Sukoon Spa Website",
+      description:
+        "Responsive spa website for Sukoon Spa with SEO optimization, showcasing luxury services, easy booking, and a calming design for top search rankings",
+      technologies: [
+        "React",
+        "Responsive Design",
+        "TailwindCSS",
+        "Google Search Console",
+      ],
+      category: "Frontend",
+      tags: ["spa", "website", "business", "responsive"],
+      image:
+        "https://res.cloudinary.com/dy7yb1876/image/upload/v1754987000/sukoon-spa-preview.png", //
+      links: {
+        demo: "https://www.sukoonspa.in/",
+      },
+      featured: true,
+      lastUpdated: "2025-08-13",
+      projectType: "client",
+    },
   ],
 };
