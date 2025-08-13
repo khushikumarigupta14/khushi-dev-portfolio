@@ -10,7 +10,7 @@ export const educationData = [
     degree: "Intermediate (12th), Science Stream",
     institution: "B.D College (BSEB), Patna",
     year: "2022 - 2024",
-    details: "Specialized in Mathematics and Computer Science.",
+    details: "PCMB.",
   },
   {
     degree: "Matriculation (10th)",
@@ -45,4 +45,11 @@ export const certificatesData = [
   },
 ];
 
-export const achievementsData = [];
+export const achievementsData = [
+  {
+    title: "Internship at WebxLabs",
+    year: "2025",
+    description:
+      "Worked as a Software Developer Intern at WebxLabs, contributing to three major projects: State Tax Management System, Safar Manager, and E-Commerce Website. Gained hands-on experience in React.js, Node.js, Express, MongoDB, CoreUI, Redux, and Tailwind CSS.",
+  },
+];

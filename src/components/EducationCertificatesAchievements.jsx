@@ -61,16 +61,19 @@ const EducationCertificatesAchievements = () => {
         </section>
 
         {/* Achievements */}
-        {/* <section>
+        <section>
           <h3 className="pb-2 mb-6 text-2xl font-semibold border-b border-green-500/30 dark:text-white hover:dark:text-gray-200">
             Achievements
           </h3>
           <ul className="space-y-2 text-gray-600 list-disc list-inside dark:text-gray-300">
             {achievementsData.map((achievement, idx) => (
-              <li key={idx}>{achievement}</li>
+              <li key={idx}>
+                <strong>{achievement.title}</strong> ({achievement.year}) –{" "}
+                {achievement.description}
+              </li>
             ))}
           </ul>
-        </section> */}
+        </section>
       </div>
     </Section>
   );

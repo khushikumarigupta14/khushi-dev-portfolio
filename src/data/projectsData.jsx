@@ -19,6 +19,7 @@ export const projectsData = {
       },
       featured: false,
       lastUpdated: "2025-07-07",
+      projectType: "personal",
     },
     {
       id: 2,
@@ -42,6 +43,7 @@ export const projectsData = {
         demo: "https://quadb-advancetodo.netlify.app/",
       },
       featured: false,
+      projectType: "personal",
       lastUpdated: "2025-07-07",
     },
     {
@@ -59,6 +61,7 @@ export const projectsData = {
         demo: "https://passwordvalidator-khushicode.netlify.app/",
       },
       featured: false,
+      projectType: "personal",
       lastUpdated: "2025-07-07",
     },
     {
@@ -77,6 +80,7 @@ export const projectsData = {
       },
       featured: false,
       lastUpdated: "2025-07-07",
+      projectType: "personal",
     },
     {
       id: 5,
@@ -94,6 +98,7 @@ export const projectsData = {
       },
       featured: false,
       lastUpdated: "2025-07-07",
+      projectType: "personal",
     },
     {
       id: 6,
@@ -132,6 +137,7 @@ export const projectsData = {
       },
       featured: false,
       lastUpdated: "2025-07-07",
+      projectType: "personal",
     },
   ],
 };

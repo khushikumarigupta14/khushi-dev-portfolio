@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="overflow-hidden transition-all duration-500 border shadow-lg  border-white/30 dark:border-white/20 bg-white/20 dark:bg-gray-900/30 backdrop-blur-md rounded-2xl hover:bg-white/30 dark:hover:bg-gray-900/50 hover:scale-105"
+      className="overflow-hidden transition-all duration-500 border shadow-lg border-white/30 dark:border-white/20 bg-white/20 dark:bg-gray-900/30 backdrop-blur-md rounded-2xl hover:bg-white/30 dark:hover:bg-gray-900/50 hover:scale-105"
     >
       <div className="relative overflow-hidden">
         <img
@@ -25,6 +25,28 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="p-6">
+        {project?.projectType &&
+          (() => {
+            const typeColors = {
+              personal: "text-blue-500 border-blue-500 bg-blue-500/20",
+              internship: "text-purple-500 border-purple-500 bg-purple-500/20",
+              job: "text-green-500 border-green-500 bg-green-500/20",
+              freelance: "text-orange-500 border-orange-500 bg-orange-500/20",
+            };
+
+            const colorClass =
+              typeColors[project.projectType.toLowerCase()] ||
+              "text-gray-500 border-gray-500 bg-gray-500/20"; // default
+
+            return (
+              <span
+                className={`inline-block px-3 py-1 mb-3 text-xs font-semibold tracking-wide uppercase border rounded-full ${colorClass}`}
+              >
+                {project.projectType}
+              </span>
+            );
+          })()}
+
         <h3 className="mb-2 text-xl font-bold text-gray-600 transition-colors duration-300 dark:text-white group-hover:text-blue-300">
           {project.title}
         </h3>
@@ -44,22 +66,26 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="flex gap-4">
-          <a
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 font-medium text-gray-400 transition-colors duration-300 hover:text-white"
-          >
-            <FiGithub /> Code
-          </a>
-          <a
-            href={project.links.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 font-medium text-blue-400 transition-colors duration-300 hover:text-blue-300"
-          >
-            <FiExternalLink /> Live Demo
-          </a>
+          {project?.links?.github && (
+            <a
+              href={project.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 font-medium text-gray-400 transition-colors duration-300 hover:text-white"
+            >
+              <FiGithub /> Code
+            </a>
+          )}
+          {project?.links?.demo && (
+            <a
+              href={project.links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 font-medium text-blue-400 transition-colors duration-300 hover:text-blue-300"
+            >
+              <FiExternalLink /> Live Demo
+            </a>
+          )}
         </div>
       </div>
     </motion.div>
@@ -67,3 +93,4 @@ const ProjectCard = ({ project }) => {
 };
 
 export default ProjectCard;
+  
