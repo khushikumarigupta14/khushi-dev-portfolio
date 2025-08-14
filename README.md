@@ -1,6 +1,6 @@
 # Khushi Kumari Portfolio
 
-A modern, responsive personal portfolio website built with React, Tailwind CSS, and Vite, showcasing projects, skills, and professional experience.
+A modern, responsive personal portfolio website built with React, Tailwind CSS, and Vite, showcasing projects, skills, and professional experience.(As project not real)
 
 <div align="center">
 
