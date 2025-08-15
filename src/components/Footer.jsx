@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Middle Column */}
           <div className="space-y-4">
-            <h4 className="mb-4 text-lg font-semibold text-white">
+            <h4 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -73,7 +73,9 @@ const Footer = () => {
 
           {/* Right Column */}
           <div className="space-y-4">
-            <h4 className="mb-4 text-lg font-semibold text-white">Connect</h4>
+            <h4 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+              Connect
+            </h4>
             <div className="flex gap-4 mb-6">
               {footerData.social.map((social, index) => (
                 <a
