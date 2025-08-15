@@ -77,7 +77,7 @@ const EducationCertificatesAchievements = () => {
           <h3 className="pb-2 mb-6 text-2xl font-semibold border-b border-green-500/30 dark:text-white hover:dark:text-gray-200">
             Achievements
           </h3>
-          <ul className="space-y-2 text-gray-600 list-disc list-inside dark:text-gray-300">
+          <ul className="space-y-2 text-gray-600 list-disc list-inside dark:text-gray-300 ">
             {achievementsData.map((achievement, idx) => (
               <li key={idx}>
                 <strong>
@@ -85,7 +85,7 @@ const EducationCertificatesAchievements = () => {
                     href={achievement.companyLinks}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white transition-colors hover:underline "
+                    className="text-gray-600 transition-colors dark:text-gray-300 hover:underline "
                   >
                     {achievement.title}
                   </a>
