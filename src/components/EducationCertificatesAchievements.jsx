@@ -47,16 +47,28 @@ const EducationCertificatesAchievements = () => {
             Certificates
           </h3>
           <ul className="space-y-4 text-gray-600 dark:text-gray-400">
-            {certificatesData.map(({ title, issuer, year }, idx) => (
-              <li key={idx}>
-                <p>
-                  <span className="font-semibold text-black dark:text-white">
-                    {title}
-                  </span>{" "}
-                  - {issuer} ({year})
-                </p>
-              </li>
-            ))}
+            {certificatesData.map(
+              ({ title, issuer, year, description, certificateLink }, idx) => (
+                <li key={idx}>
+                  <p>
+                    <a
+                      href={certificateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-black cursor-pointer dark:text-white hover:underline"
+                    >
+                      {title}
+                    </a>{" "}
+                    - {issuer} ({year})
+                  </p>
+                  {description && (
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {description}
+                    </p>
+                  )}
+                </li>
+              )
+            )}
           </ul>
         </section>
 
@@ -68,8 +80,17 @@ const EducationCertificatesAchievements = () => {
           <ul className="space-y-2 text-gray-600 list-disc list-inside dark:text-gray-300">
             {achievementsData.map((achievement, idx) => (
               <li key={idx}>
-                <strong>{achievement.title}</strong> ({achievement.year}) –{" "}
-                {achievement.description}
+                <strong>
+                  <a
+                    href={achievement.companyLinks}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white transition-colors hover:underline "
+                  >
+                    {achievement.title}
+                  </a>
+                </strong>{" "}
+                ({achievement.year}) – {achievement.description}
               </li>
             ))}
           </ul>

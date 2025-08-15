@@ -29,6 +29,11 @@ export const footerData = {
       url: "mailto:khushikumarigupta463@gmail.com",
       icon: "FaEnvelope",
     },
+    {
+      platform: "Upwork",
+      url: "https://www.upwork.com/freelancers/~013f466751ec71653b?mp_source=share",
+      icon: "FaUpwork",
+    },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
